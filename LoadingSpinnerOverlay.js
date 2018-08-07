@@ -1,12 +1,12 @@
 /*
  * A smart loading spinner overlay for React Native apps, written in JS
- * https://github.com/react-native-component/react-native-smart-loading-spinner-overlay/
+ * https://github.com/tnrn/tnrn-loading/
  * Released under the MIT license
- * Copyright (c) 2016 react-native-component <moonsunfall@aliyun.com>
+ * Copyright (c) 2016 tnrn <moonsunfall@aliyun.com>
  */
 
 import React, { Component, } from 'react';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 import {
   View,
   Modal,
