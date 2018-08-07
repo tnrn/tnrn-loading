@@ -1,6 +1,6 @@
 {
   "name": "tnrn-loading",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A smart loading spinner overlay for React Native apps, written in JS for cross-platform support. It works on iOS and Android.",
   "main": "LoadingSpinnerOverlay.js",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/tnrn/tnrn-loading#readme",
   "dependencies": {
-    "react-native-smart-timer-enhance": "^1.0.2"
+    "react-native-smart-timer-enhance": "^1.0.2",
+    "prop-types": "15.6.2"
   }
 }

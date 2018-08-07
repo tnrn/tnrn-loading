@@ -16,7 +16,6 @@ import {
   ActivityIndicator,
   ActivityIndicatorIOS,
   ProgressBarAndroid,
-  ViewProptypes,
 } from 'react-native'
 
 import TimerEnhance from 'react-native-smart-timer-enhance'
@@ -50,8 +49,8 @@ class LoadingSpinnerOverlay extends Component {
   }
 
   static propTypes = {
-    overlayStyle: ViewProptypes.style,
-    style: ViewProptypes.style,
+    overlayStyle: PropTypes.style,
+    style: PropTypes.style,
     duration: PropTypes.number,
     delay: PropTypes.number,
     marginTop: PropTypes.number,
