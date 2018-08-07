@@ -221,7 +221,7 @@ modal            | bool   | Yes      | true             | determine if the modal
     * animationEnd: determine the callback when animation is end
 
 [0]: https://github.com/cyqresig/ReactNativeComponentDemos
-[1]: http://cyqresig.github.io/img/tnrn-loading-preview-ios-v1.0.0.gif
-[2]: http://cyqresig.github.io/img/tnrn-loading-preview-android-v1.0.0.gif
+[1]: http://cyqresig.github.io/img/react-native-smart-loading-spinner-overlay-preview-ios-v1.0.0.gif
+[2]: http://cyqresig.github.io/img/react-native-smart-loading-spinner-overlay-preview-android-v1.0.0.gif
 [3]: https://facebook.github.io/react-native/docs/style.html
 [4]: http://facebook.github.io/react-native/docs/text.html#style
