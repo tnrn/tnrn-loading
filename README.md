@@ -1,9 +1,9 @@
-# react-native-smart-loading-spinner-overlay
+# tnrn-loading
 
-[![npm](https://img.shields.io/npm/v/react-native-smart-loading-spinner-overlay.svg)](https://www.npmjs.com/package/react-native-smart-loading-spinner-overlay)
-[![npm](https://img.shields.io/npm/dm/react-native-smart-loading-spinner-overlay.svg)](https://www.npmjs.com/package/react-native-smart-loading-spinner-overlay)
-[![npm](https://img.shields.io/npm/dt/react-native-smart-loading-spinner-overlay.svg)](https://www.npmjs.com/package/react-native-smart-loading-spinner-overlay)
-[![npm](https://img.shields.io/npm/l/react-native-smart-loading-spinner-overlay.svg)](https://github.com/react-native-component/react-native-smart-loading-spinner-overlay/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/tnrn-loading.svg)](https://www.npmjs.com/package/tnrn-loading)
+[![npm](https://img.shields.io/npm/dm/tnrn-loading.svg)](https://www.npmjs.com/package/tnrn-loading)
+[![npm](https://img.shields.io/npm/dt/tnrn-loading.svg)](https://www.npmjs.com/package/tnrn-loading)
+[![npm](https://img.shields.io/npm/l/tnrn-loading.svg)](https://github.com/react-native-component/tnrn-loading/blob/master/LICENSE)
 
 A smart loading spinner overlay for React Native apps, written in JS for cross-platform support.
 It works on iOS and Android.
@@ -12,13 +12,13 @@ This component is compatible with React Native 0.25 and newer.
 
 ## Preview
 
-![react-native-smart-loading-spinner-overlay-preview-ios][1]
-![react-native-smart-loading-spinner-overlay-preview-android][2]
+![tnrn-loading-preview-ios][1]
+![tnrn-loading-preview-android][2]
 
 ## Installation
 
 ```
-npm install react-native-smart-loading-spinner-overlay --save
+npm install tnrn-loading --save
 ```
 
 ## Full Demo
@@ -27,8 +27,8 @@ see [ReactNativeComponentDemos][0]
 
 ## Usage
 
-Install the loading-spinner-overlay from npm with `npm install react-native-smart-loading-spinner-overlay --save`.
-Then, require it from your app's JavaScript files with `import loading-spinner-overlay from 'react-native-smart-loading-spinner-overlay'`.
+Install the loading-spinner-overlay from npm with `npm install tnrn-loading --save`.
+Then, require it from your app's JavaScript files with `import loading-spinner-overlay from 'tnrn-loading'`.
 
 ```js
 
@@ -41,7 +41,7 @@ import {
 
 import Button from 'react-native-smart-button'
 import TimerEnhance from 'react-native-smart-timer-enhance'
-import Toast from 'react-native-smart-loading-spinner-overlay'
+import Toast from 'tnrn-loading'
 
 class LoadingSpinnerOverLayDemo extends Component {
 
@@ -221,7 +221,7 @@ modal            | bool   | Yes      | true             | determine if the modal
     * animationEnd: determine the callback when animation is end
 
 [0]: https://github.com/cyqresig/ReactNativeComponentDemos
-[1]: http://cyqresig.github.io/img/react-native-smart-loading-spinner-overlay-preview-ios-v1.0.0.gif
-[2]: http://cyqresig.github.io/img/react-native-smart-loading-spinner-overlay-preview-android-v1.0.0.gif
+[1]: http://cyqresig.github.io/img/tnrn-loading-preview-ios-v1.0.0.gif
+[2]: http://cyqresig.github.io/img/tnrn-loading-preview-android-v1.0.0.gif
 [3]: https://facebook.github.io/react-native/docs/style.html
 [4]: http://facebook.github.io/react-native/docs/text.html#style
