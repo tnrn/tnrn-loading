@@ -17,6 +17,7 @@ import {
   ActivityIndicator,
   ActivityIndicatorIOS,
   ProgressBarAndroid,
+  ViewPropTypes,
 } from 'react-native'
 
 import TimerEnhance from 'react-native-smart-timer-enhance'
@@ -50,8 +51,8 @@ class LoadingSpinnerOverlay extends Component {
   }
 
   static propTypes = {
-    overlayStyle: PropTypes.style,
-    style: PropTypes.style,
+    overlayStyle: ViewPropTypes.style,
+    style: ViewPropTypes.style,
     duration: PropTypes.number,
     delay: PropTypes.number,
     marginTop: PropTypes.number,
@@ -79,7 +80,7 @@ class LoadingSpinnerOverlay extends Component {
     return this._renderOverLay(loadingSpinner)
   }
 
-  _renderOverLay(loadingSpinner) {
+  _renderOverLay = (loadingSpinner) => {
     let { width: deviceWidth, height: deviceHeight, } = Dimensions.get('window')
     return (
       this.state.modal ?
@@ -94,9 +95,9 @@ class LoadingSpinnerOverlay extends Component {
             </View> : null))
         : loadingSpinner
     )
-  }
+  };
 
-  _renderLoadingSpinner() {
+  _renderLoadingSpinner = () => {
     let children
     if (this.state.children == null) {
       children = this._renderActivityIndicator()
@@ -118,11 +119,24 @@ class LoadingSpinnerOverlay extends Component {
           {children}
         </Animated.View> : null
     )
-  }
+  };
 
-  show({ modal = this.state.modal, marginTop = this.state.marginTop, children = this.state.children, duration = this.props.duration, easing = Easing.linear, delay = this.props.delay, animationEnd, }
-    = { modal: this.state.modal, marginTop: this.state.marginTop, children: this.state.children, duration: this.props.duration, easing: Easing.linear, delay: this.props.delay, }) {
-
+  show = ({
+            modal = this.state.modal,
+            marginTop = this.state.marginTop,
+            children = this.state.children,
+            duration = this.props.duration,
+            easing = Easing.linear,
+            delay = this.props.delay,
+            animationEnd
+          } = {
+            modal: this.state.modal,
+            marginTop: this.state.marginTop,
+            children: this.state.children,
+            duration: this.props.duration,
+            easing: Easing.linear,
+            delay: this.props.delay
+          }) => {
     this._loadingSpinnerShowAnimation && this._loadingSpinnerShowAnimation.stop()
     this._loadingSpinnerHideAnimation && this._loadingSpinnerHideAnimation.stop()
     this._loadingSpinnerAnimationToggle && this.clearTimeout(this._loadingSpinnerAnimationToggle)
@@ -154,7 +168,7 @@ class LoadingSpinnerOverlay extends Component {
   }
 
   hide({ duration = this.props.duration, easing = Easing.linear, delay = this.props.delay, animationEnd, }
-    = { duration: this.props.duration, easing: Easing.linear, delay: this.props.delay, }) {
+         = { duration: this.props.duration, easing: Easing.linear, delay: this.props.delay, }) {
 
     this._loadingSpinnerShowAnimation && this._loadingSpinnerShowAnimation.stop()
     this._loadingSpinnerHideAnimation && this._loadingSpinnerHideAnimation.stop()
