@@ -122,21 +122,21 @@ class LoadingSpinnerOverlay extends Component {
   };
 
   show = ({
-            modal = this.state.modal,
-            marginTop = this.state.marginTop,
-            children = this.state.children,
-            duration = this.props.duration,
-            easing = Easing.linear,
-            delay = this.props.delay,
-            animationEnd
-          } = {
-            modal: this.state.modal,
-            marginTop: this.state.marginTop,
-            children: this.state.children,
-            duration: this.props.duration,
-            easing: Easing.linear,
-            delay: this.props.delay
-          }) => {
+    modal = this.state.modal,
+    marginTop = this.state.marginTop,
+    children = this.state.children,
+    duration = this.props.duration,
+    easing = Easing.linear,
+    delay = this.props.delay,
+    animationEnd
+  } = {
+      modal: this.state.modal,
+      marginTop: this.state.marginTop,
+      children: this.state.children,
+      duration: this.props.duration,
+      easing: Easing.linear,
+      delay: this.props.delay
+    }) => {
     this._loadingSpinnerShowAnimation && this._loadingSpinnerShowAnimation.stop()
     this._loadingSpinnerHideAnimation && this._loadingSpinnerHideAnimation.stop()
     this._loadingSpinnerAnimationToggle && this.clearTimeout(this._loadingSpinnerAnimationToggle)
@@ -168,7 +168,7 @@ class LoadingSpinnerOverlay extends Component {
   }
 
   hide({ duration = this.props.duration, easing = Easing.linear, delay = this.props.delay, animationEnd, }
-         = { duration: this.props.duration, easing: Easing.linear, delay: this.props.delay, }) {
+    = { duration: this.props.duration, easing: Easing.linear, delay: this.props.delay, }) {
 
     this._loadingSpinnerShowAnimation && this._loadingSpinnerShowAnimation.stop()
     this._loadingSpinnerHideAnimation && this._loadingSpinnerHideAnimation.stop()
